@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -91,4 +89,3 @@
           um mapa interativo de locais e uma galeria de imagens.</p>
     </div>
   </body>
-</html>
