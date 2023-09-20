@@ -1,6 +1,7 @@
 <script setup>
 // import { RouterLink, RouterView } from 'vue-router'
 import { ref } from "vue";
+import "./components/style/App.css";
 
 let num = ref(0);
 
@@ -69,6 +70,8 @@ let num = ref(0);
 }
 .navbar-toggler {
   border: none;
+  margin: 0 40px 0 0;
+
 }
 
 nav[data-v-7a7a37b1] {
