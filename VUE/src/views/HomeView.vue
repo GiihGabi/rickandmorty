@@ -1,5 +1,6 @@
 <script setup>
 import { onMounted, reactive, ref } from 'vue';
+import "../components/style/home.css";
 // import ListPokemons from '../components/ListSW.vue';
 
 let baseUrlSvg = ref("https://raw.githubusercontent.com/PokeApi/sprites/master/sprites/pokemon/other/dream-world/");
@@ -7,11 +8,11 @@ let pokemons = reactive(ref());
 
 onMounted(() => {
   fetch("https://pokeapi.co/api/v2/pokemon/?limit=20&offset=0")
-  .then(response => response.json())
-  .then(response => {
-    pokemons.value = response.results;
-    console.log(response);
-  })
+    .then(response => response.json())
+    .then(response => {
+      pokemons.value = response.results;
+      console.log(response);
+    })
 })
 </script>
 
@@ -23,14 +24,19 @@ onMounted(() => {
         <div class="container-esquerda">
           <img id="logoA" src="../components/image/LogoA.png" alt="logoRickandMorty" width="397" height="115.72">
           <div class="h1-div">
-            <h1 >
+            <h1>
               "Viver é arriscar <p class="p-tudo"> &nbsp; tudo"</p>
             </h1>
           </div>
         </div>
       </div>
+
       <div class="btn-group" id="button-esquerda">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+          <!-- <div>
+          <img src="../components/image/ball.png" alt="">
+        </div> -->
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+          aria-expanded="false">
           <div>
             <img src="../components/image/neptuno.png" alt="" width="40">
           </div>
@@ -42,10 +48,8 @@ onMounted(() => {
           <li><a class="dropdown-item" href="#">Menu item</a></li>
         </ul>
       </div>
-      <div>
-
-      </div>
     </div>
+
   </main>
 </template>
 
@@ -57,11 +61,14 @@ onMounted(() => {
 }
 
 main {
-  width: 100vw;
-  height: 100vh;
+  height: calc(100vh - 80px);
   background-color: black;
+  background-image: url("../components/image/rickBack.png");
+  background-repeat: no-repeat;
+  background-position: right;
   overflow: hidden;
 }
+
 
 #container-esquerda {
   display: flex;
@@ -69,7 +76,7 @@ main {
 }
 
 #button-esquerda {
-  margin: 51px 0 0 80px;
+  margin: 404px 0 0 80px;
 }
 
 .btn-group>.btn[data-v-b4e148ca] {
@@ -79,6 +86,8 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  border-radius: 15px;
+
 }
 
 .container-esquerda {
@@ -95,12 +104,8 @@ main {
 
 .btn-group>.btn {
   width: 433px;
-  height: 50px;
+  height: 60px;
 }
 
-.navbar-toggler-icon
-{
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(123, 245, 30, 0.75)' stroke-width='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-}
 
 </style>
