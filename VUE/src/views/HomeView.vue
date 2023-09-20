@@ -24,10 +24,26 @@ onMounted(() => {
           <img id="logoA" src="../components/image/LogoA.png" alt="logoRickandMorty" width="397" height="115.72">
           <div class="h1-div">
             <h1 >
-              "Viver é  <p>arriscar</p> <p class="p-tudo">tudo"</p>
+              "Viver é arriscar <p class="p-tudo"> &nbsp; tudo"</p>
             </h1>
           </div>
         </div>
+      </div>
+      <div class="btn-group" id="button-esquerda">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+          <div>
+            <img src="../components/image/neptuno.png" alt="" width="40">
+          </div>
+          Dropdown
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <li><a class="dropdown-item" href="#">Menu item</a></li>
+          <li><a class="dropdown-item" href="#">Menu item</a></li>
+          <li><a class="dropdown-item" href="#">Menu item</a></li>
+        </ul>
+      </div>
+      <div>
+
       </div>
     </div>
   </main>
@@ -52,6 +68,19 @@ main {
   margin: 51px 0 0 80px;
 }
 
+#button-esquerda {
+  margin: 51px 0 0 80px;
+}
+
+.btn-group>.btn[data-v-b4e148ca] {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #4D4D4D;
+  background-color: #87F54E;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
 .container-esquerda {
   display: block;
 }
@@ -62,6 +91,16 @@ main {
 
 .h1-div {
   margin-top: 60px;
+}
+
+.btn-group>.btn {
+  width: 433px;
+  height: 50px;
+}
+
+.navbar-toggler-icon
+{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(123, 245, 30, 0.75)' stroke-width='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
 
