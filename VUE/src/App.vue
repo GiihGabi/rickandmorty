@@ -1,7 +1,7 @@
 <script setup>
 // import { RouterLink, RouterView } from 'vue-router'
 import { ref } from "vue";
-import "./components/style/App.css";
+import "./components/style/app.css";
 
 let num = ref(0);
 
@@ -11,9 +11,11 @@ let num = ref(0);
   <header>
     <nav class="navbar">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"></a>
+        <div class="navc">
+          <routerLink to="/" class="nav-link" aria-current="page"><img src="./components/image/LogoA.png" alt="" width="305"></routerLink>
+        </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon" id="teste"></span>
+          <span class="navbar-toggler-icon text-success" id="teste"></span>
         </button>
         <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
           <div class="offcanvas-header">
@@ -74,11 +76,22 @@ let num = ref(0);
 
 }
 
+.navc {
+  width: 2300px;
+  display: flex;
+  justify-content: center;
+}
+
 nav[data-v-7a7a37b1] {
-  height: 80px;
+  height: 100px;
   background-color: black;
   box-shadow: 0px 0px 20px 0px #00F227;
 }
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(123, 245, 30, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
 
 
 </style>

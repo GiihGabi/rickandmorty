@@ -1,19 +1,5 @@
 <script setup>
-import { onMounted, reactive, ref } from 'vue';
-import "../components/style/home.css";
-// import ListPokemons from '../components/ListSW.vue';
 
-let baseUrlSvg = ref("https://raw.githubusercontent.com/PokeApi/sprites/master/sprites/pokemon/other/dream-world/");
-let pokemons = reactive(ref());
-
-onMounted(() => {
-  fetch("https://pokeapi.co/api/v2/pokemon/?limit=20&offset=0")
-    .then(response => response.json())
-    .then(response => {
-      pokemons.value = response.results;
-      console.log(response);
-    })
-})
 </script>
 
 
@@ -28,26 +14,28 @@ onMounted(() => {
               "Viver é arriscar <p class="p-tudo"> &nbsp; tudo"</p>
             </h1>
           </div>
+          <div id="ball">
+            <img src="../components/image/ball.png" alt="" width="">
+          </div>
+        </div>
+      </div>
+      <div class="btn-group" id="button-esquerda">
+        <div class="btn-group dropend">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <div >
+              <img src="../components/image/neptuno.png" alt="" width="40">
+            </div>
+            <p class="p-pesquisar">Quero procurar ...</p>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li><routerLink to="/episodio" class="nav-link" aria-current="page">Epsódios</routerLink></li>
+            <li><a class="dropdown-item" href="#">Menu item</a></li>
+            <li><a class="dropdown-item" href="#">Menu item</a></li>
+          </ul>
         </div>
       </div>
 
-      <div class="btn-group" id="button-esquerda">
-          <!-- <div>
-          <img src="../components/image/ball.png" alt="">
-        </div> -->
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
-          aria-expanded="false">
-          <div>
-            <img src="../components/image/neptuno.png" alt="" width="40">
-          </div>
-          Dropdown
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <li><a class="dropdown-item" href="#">Menu item</a></li>
-          <li><a class="dropdown-item" href="#">Menu item</a></li>
-          <li><a class="dropdown-item" href="#">Menu item</a></li>
-        </ul>
-      </div>
     </div>
 
   </main>
@@ -61,22 +49,23 @@ onMounted(() => {
 }
 
 main {
-  height: calc(100vh - 80px);
+  height: calc(100vh - 100px);
   background-color: black;
   background-image: url("../components/image/rickBack.png");
   background-repeat: no-repeat;
   background-position: right;
+  background-size: 40%;
   overflow: hidden;
 }
 
 
 #container-esquerda {
   display: flex;
-  margin: 51px 0 0 80px;
+  margin: 51px 0 0 10;
 }
 
 #button-esquerda {
-  margin: 404px 0 0 80px;
+  margin: 5em 0 0 10;
 }
 
 .btn-group>.btn[data-v-b4e148ca] {
@@ -104,8 +93,12 @@ main {
 
 .btn-group>.btn {
   width: 433px;
-  height: 60px;
+  height: 70px;
 }
 
+.p-pesquisar {
+  font-weight: 600;
+  font-size: 24px;
+}
 
 </style>
