@@ -11,9 +11,8 @@ let num = ref(0);
   <header>
     <nav class="navbar">
       <div class="container-fluid">
-        <div class="navc">
-          <routerLink to="/" class="nav-link" aria-current="page"><img src="./components/image/LogoA.png" alt="" width="305"></routerLink>
-        </div>
+        <div></div>
+        <routerLink to="/" class="nav-link" aria-current="page"><img src="./components/image/LogoA.png" alt="" width="305"></routerLink>
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon text-success" id="teste"></span>
         </button>
