@@ -55,17 +55,17 @@ main {
   background-repeat: no-repeat;
   background-position: right;
   background-size: 40%;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 
 #container-esquerda {
   display: flex;
-  margin: 51px 0 0 10;
+  margin: 51px 0 0 80px;
 }
 
 #button-esquerda {
-  margin: 5em 0 0 10;
+  margin: 5em 0 0 80px;
 }
 
 .btn-group>.btn[data-v-b4e148ca] {
