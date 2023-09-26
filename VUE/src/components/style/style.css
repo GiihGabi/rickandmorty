@@ -1,6 +1,6 @@
 :root {
     --orange: #00F227;
-    --darkorange: #00F227;
+    --greeeen: #00F227;
     --platinum: #e5e5e5;
     --black: #2b2d42;
     --white: #fff;
@@ -74,7 +74,7 @@
 }
 
 .card:hover .card-link {
-    background: var(--darkorange);
+    background: var(--greeeen);
 }
 
 .cards::-webkit-scrollbar {
@@ -87,7 +87,7 @@
 }
 
 .cards::-webkit-scrollbar-thumb {
-    background: var(--darkorange);
+    background: var(--greeeen);
 }
 
 .cards::-webkit-scrollbar-track {

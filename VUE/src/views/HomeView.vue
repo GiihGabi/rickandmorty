@@ -30,8 +30,7 @@
           </button>
           <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
             <li><routerLink to="/episodio" class="nav-link" aria-current="page">Epsódios</routerLink></li>
-            <li><a class="dropdown-item" href="#">Menu item</a></li>
-            <li><a class="dropdown-item" href="#">Menu item</a></li>
+            <li><routerLink to="/personagens" class="nav-link" aria-current="page">Personagens</routerLink></li>
           </ul>
         </div>
       </div>

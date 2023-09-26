@@ -5,9 +5,9 @@ const temp = defineProps(["name", "baseUrlSvg"]);
 <template>
   <div class="col-4">
     <div class="card p-2 mb-3" >
-      <img :src="temp.baseUrlSvg" class="card-img-top" height="300">
+      <!-- <img :src="temp.baseUrlSvg" class="card-img-top" height="300"> -->
       <p>{{ temp.name }}</p>
-      <p>{{ temp.name }}</p>  
+      <h5 class="card-title">{{ episode.name }}</h5>
     </div>
   </div>
 </template>
