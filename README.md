@@ -2,8 +2,10 @@
 ## Para rodar o projeto
 Abrir o promp
 ```sh
-git clone (meu repositório)
+git clone https://github.com/GiihGabi/rickandmorty
 ```
+
+caso nao funcione pega o meu link do repositorio no git para dar o git clone
 
 ```sh
 cd /rickandmorty
