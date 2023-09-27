@@ -1,20 +1,26 @@
 #DOCUMENTAÇÃO
 ## Para rodar o projeto
+Abrir o promp
+```sh
+git clone (meu repositório)
+```
+
+```sh
+cd /rickandmorty
+```
+
+```sh
+cd vue
+```
 
 ```sh
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+### Para ver o projeto rodando
 
 ```sh
 npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
 ```
 
 #SOBRE
